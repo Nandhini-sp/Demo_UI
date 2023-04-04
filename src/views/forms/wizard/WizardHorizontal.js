@@ -5,10 +5,10 @@ import { useRef, useState } from 'react'
 import Wizard from '@components/wizard'
 
 // ** Steps
-import Address from './steps-with-validation/Address'
-import SocialLinks from './steps-with-validation/SocialLinks'
-import PersonalInfo from './steps-with-validation/PersonalInfo'
-import AccountDetails from './steps-with-validation/AccountDetails'
+// import Address from './steps-with-validation/Address'
+import SocialLinks from './steps/SocialLinks'
+import PersonalInfo from './steps/PersonalInfo'
+import AccountDetails from './steps/AccountDetails'
 
 const WizardHorizontal = () => {
   // ** Ref
@@ -20,26 +20,26 @@ const WizardHorizontal = () => {
   const steps = [
     {
       id: 'account-details',
-      title: 'Account Details',
-      subtitle: 'Enter Your Account Details.',
+      title: 'Patient Details',
+      subtitle: 'Enter Patient Account Details.',
       content: <AccountDetails stepper={stepper} />
     },
     {
-      id: 'personal-info',
-      title: 'Personal Info',
-      subtitle: 'Add Personal Info',
+      id: 'vehicle-details',
+      title: 'Vehicle Details',
+      subtitle: 'Add Vehicle Info',
       content: <PersonalInfo stepper={stepper} />
     },
+    // {
+    //   id: 'incident-details',
+    //   title: 'Incident Details',
+    //   subtitle: 'Add Address',
+    //   content: <Address stepper={stepper} />
+    // },
     {
-      id: 'step-address',
-      title: 'Address',
-      subtitle: 'Add Address',
-      content: <Address stepper={stepper} />
-    },
-    {
-      id: 'social-links',
-      title: 'Social Links',
-      subtitle: 'Add Social Links',
+      id: 'incident-details',
+      title: 'Incident Details',
+      subtitle: 'Add Incident Details',
       content: <SocialLinks stepper={stepper} />
     }
   ]

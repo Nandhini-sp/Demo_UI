@@ -1,6 +1,8 @@
 import { lazy } from 'react'
 
 const Wizard = lazy(() => import('../../views/forms/wizard'))
+const Assessment = lazy(()=> import('../../views/forms/assessment'))
+const Treatment = lazy(()=> import('../../views/forms/treatment'))
 const Validation = lazy(() => import('../../views/forms/validation'))
 const FormLayouts = lazy(() => import('../../views/forms/form-layouts'))
 const Radio = lazy(() => import('../../views/forms/form-elements/radio'))
@@ -73,6 +75,14 @@ const FormRoutes = [
   {
     element: <Wizard />,
     path: '/forms/wizard'
+  },
+  {
+    element: <Assessment />,
+    path: '/forms/assessment'
+  },
+  {
+    element: <Treatment />,
+    path: '/forms/treatment'
   },
   {
     element: <Validation />,

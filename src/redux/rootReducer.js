@@ -27,6 +27,8 @@ const rootReducer = {
   ecommerce,
   dataTables,
   permissions
+  
+  
 }
 
 export default rootReducer

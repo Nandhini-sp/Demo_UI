@@ -96,8 +96,8 @@ const Register = () => {
 
   return (
     <div className='auth-wrapper auth-cover'>
-      <Row className='auth-inner m-0'>
-        <Link className='brand-logo' to='/' onClick={e => e.preventDefault()}>
+      <Row className='auth-inner m-0 d-flex justify-content-center align-item-center'>
+        {/* <Link className='brand-logo' to='/' onClick={e => e.preventDefault()}>
           <svg viewBox='0 0 139 95' version='1.1' height='28'>
             <defs>
               <linearGradient x1='100%' y1='10.5120544%' x2='50%' y2='89.4879456%' id='linearGradient-1'>
@@ -147,18 +147,18 @@ const Register = () => {
             </g>
           </svg>
           <h2 className='brand-text text-primary ms-1'>Vuexy</h2>
-        </Link>
-        <Col className='d-none d-lg-flex align-items-center p-5' lg='8' sm='12'>
+        </Link> */}
+        {/* <Col className='d-none d-lg-flex align-items-center p-5' lg='8' sm='12'>
           <div className='w-100 d-lg-flex align-items-center justify-content-center px-5'>
             <img className='img-fluid' src={source} alt='Login Cover' />
           </div>
-        </Col>
+        </Col> */}
         <Col className='d-flex align-items-center auth-bg px-2 p-lg-5' lg='4' sm='12'>
           <Col className='px-xl-2 mx-auto' sm='8' md='6' lg='12'>
-            <CardTitle tag='h2' className='fw-bold mb-1'>
-              Adventure starts here 🚀
+            <CardTitle tag='h2' className='fw-bold mb-1 text-center'>
+              Register
             </CardTitle>
-            <CardText className='mb-2'>Make your app management easy and fun!</CardText>
+            {/* <CardText className='mb-2'>Make your app management easy and fun!</CardText> */}
 
             <Form action='/' className='auth-register-form mt-2' onSubmit={handleSubmit(onSubmit)}>
               <div className='mb-1'>

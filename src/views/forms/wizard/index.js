@@ -5,10 +5,10 @@ import { Fragment } from 'react'
 import { Row, Col } from 'reactstrap'
 
 // ** Demo Components
-import WizardModern from './WizardModern'
-import WizardVertical from './WizardVertical'
+// import WizardModern from './WizardModern'
+// import WizardVertical from './WizardVertical'
 import WizardHorizontal from './WizardHorizontal'
-import WizardModernVertical from './WizardModernVertical'
+// import WizardModernVertical from './WizardModernVertical'
 
 // ** Custom Components
 import BreadCrumbs from '@components/breadcrumbs'
@@ -16,12 +16,12 @@ import BreadCrumbs from '@components/breadcrumbs'
 const Wizard = () => {
   return (
     <Fragment>
-      <BreadCrumbs title='Form Wizard' data={[{ title: 'Form' }, { title: 'Form Wizard' }]} />
+      <BreadCrumbs title='Call Details' data={[{ title: 'Form' }, { title: 'Form Wizard' }]} />
       <Row>
         <Col sm='12'>
           <WizardHorizontal />
         </Col>
-        <Col sm='12'>
+        {/* <Col sm='12'>
           <WizardVertical />
         </Col>
         <Col sm='12'>
@@ -29,7 +29,7 @@ const Wizard = () => {
         </Col>
         <Col sm='12'>
           <WizardModernVertical />
-        </Col>
+        </Col> */}
       </Row>
     </Fragment>
   )
